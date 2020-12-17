@@ -1,0 +1,81 @@
+/* Examination number */
+
+/*stylingin my banner page*/
+
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} 
+.w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
+.w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+.w3-button:hover{color:#000!important;background-color:#ccc!important}
+
+.w3-content button {
+position: absolute;
+top: 32%;
+}
+
+.w3-display-right {right:0}
+.w3-display-left {left:0}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	background-color:snow;
+    margin: 0;
+	padding: 0; }
+
+#page {
+	width: 710px;
+	background-color: white;
+	margin: 10px auto;
+	border: 2px solid black;
+	padding: 10px; }
+
+div.banner {
+    margin-bottom: 1em;
+	height: 70px ;
+	position:relative;
+	margin-top:0em;
+}
+
+#navigation {
+	margin-top: 1em;
+	height: 45px;
+	background-color: white; }
+	
+#sidebar {
+	width: 150px;
+	height: 370px;
+	background-color: white;
+	margin-bottom: .7em;
+	float: left; }
+
+.copyright {
+    font-size: 90%;
+	text-align: right; 
+	clear: left;
+	
+	margin: 0;
+	margin-top: .5em;
+	border-top: 2px solid gray;
+	padding-top: .7em;}
+	 
+	
+/* the styles for the table*/
+#productTable{
+	
+}
+caption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	font-size: 150%;
+	color: #4766B8; }
+
+td, th {
+	border: 1px solid black;
+	padding: .2em .7em;
+	font-size: 95%; }	
+	
+.alignRight {
+	text-align: right; }

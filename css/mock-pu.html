@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  function calculatePrice() {
+
+    var quantity, type, price;
+    quantity = document.getElementById("qty").value;
+    type = document.getElementById("cardstype").value;
+
+    if (type.includes("Basic")) {
+        price = 10*(quantity/100);
+    } else if (type.includes("Medium")) {
+        price = 15*(quantity/100);
+    } else if (type.includes("High")) {
+        price = 20*(quantity/100);
+    }
+
+    alert("Your order will cost " + price + " GBP.");
+
+}
+</script>
+    <form action="form.php" method="post">
+             <label >Company Name</label><br>
+             <input name="name" type="text" required /><br>
+             <br>
+             <label>Contact email</label><br>
+             <input name="email" type="email" required /><br>
+             <br>
+             <label>Business Card type</label><br>
+             <select name="cardstype" id="cardstype">
+                <option value="" disabled selected>-Select Card Quality-</option>
+                <option value="Basic Quality">Basic Quality</option>
+                <option value="Medium Quality">Medium Quality</option>
+                <option value="High Quality">High Quality</option>
+             </select><br>
+             <br>
+             <label>Business Cards quantity</label><br>
+             <input name="qty" id ="qty" type="number" required  Onchange = '
+                    if( !( this.value >= 100 && this.value <= 1000 ) ) {
+                        //alert the user that they have made a mistake
+                        alert( this.value + " is not a valid quantity. Minimun quantity per order: 100 and maximum: 1000.");
+                        this.value=""; //clears the text box
+                    }'><br>
+             <br>
+             <input type="button" name="Price" value="Calculate Price" onclick="calculatePrice(event)"/>
+             <input type="submit" value="Submit Order"/>
+        </form>
+  
+</body>
+</html>

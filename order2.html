@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="en-za" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styling.css" rel="stylesheet" type="text/css">
+
+<title>ORDER</title>
+
+</head>
+
+<body>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		function plusDivs(n) {
+		showDivs(slideIndex += n);
+		 }
+		function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		if (n > x.length) {slideIndex = 1} if (n < 1) {slideIndex = x.length}for
+		(i = 0; i < x.length; i++) {x[i].style.display = "none";}
+		x[slideIndex-1].style.display = "block"; }
+	   </script>
+	<header>
+		<!--this is the main division-->
+		
+
+	</header>
+
+	<!--this is  a main navigation page  and belwo si some links to th enav bars-->
+	<nav>
+		<ul>
+			<!--below is our  area nav in the fashion swaggga website or webpage-->
+
+			<!-- <div class="topnav">
+				<a class="active" href="order.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="products.html">Products</a>
+				<a href="orderStatus.html">About</a>
+			  </div> -->
+			  
+		
+		</ul>
+	</nav>
+
+	<article>
+		
+	<!-- contains extra information and related content or lins in our 
+	fashion swagga it contains
+
+Create the sidebar division. Add the swegga.jpg picture to the
+sidebar. Set the height of the picture to 350 pixels and the width to
+150 pixels-->
+	<aside>
+		<img  src = "delivery.gif" style ="width:300px;height:85px;">
+		<div class="banner">
+			<!-- <img class="mySlides" src="links.gif" alt="custom_html_banner1" style="height:85;width:560px;"> -->
+ 			<!-- <img class="mySlides" src="links.gif" alt="custom_html_banner2" style="width:100%">
+ 			<img class="mySlides" src="links.gif" alt="custom_html_banner3" style="width:100%">
+			 <img class="mySlides" src="links.gif" alt="custom_html_banner4" style="width:100%"> -->
+			 
+		<img src="links.gif" width="560" height="85" usemap="#NavMap" style="border: 0px; border: 2.0em;">
+		<map name="NavMap">
+			<!--coordinates=(x1=top-left,y1=bottom-right,x2,y2 corner of the rectange(shape="rect")-->
+			<area shape="rect" coords="10,5,95,35" href="order.html" alt="Home" title="Home">
+			<area shape="rect" coords="105,5,190,35" href="services.html" alt="Service" title="Services">
+			<area shape="rect" coords="205,5,300,35" href="products.html" alt="Products" title="Products">
+			<area shape="rect" coords="310,5,440,35" href="orderStatus.html" alt="Order Status" title="Order Status">
+			<area shape="rect" coords="450,5,555,5" href="contactUs.html" alt="Contact Us" title="Contact US">
+		</map>
+		</map>
+		</map>
+		   	<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+ 			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+		<div class="container">
+			<div class= "row">
+				<div class ="col-sm-6">
+					<!-- <h2>product Summary</h2> -->
+
+				</div>
+			</div>
+			<div class = "row">
+				<div class= "col-sm-6">
+				<div class="row">
+												<table id="productTable" class="table table-bordered table-condensed table-striped">
+													<caption>Product Summary </caption>
+														<tr>
+															<th>Description</th>
+															<th>Size</th>
+															<th>Color</th>
+															<th>Price</th>
+															<th>Quantity</th>
+															<th>Total</th>
+														</tr>
+														<td>Female Ski Jackets</td>
+														<td><form id="form1" runat="server">
+															<select id="Select1" name="Select1" onchange="ShowTable(this);">
+																<option value="table1">Red</option>
+																 <option value="table2">FUCK YOU</option>
+																 <option value="table3">MOTHER</option>
+															</select></td>
+														<td></td>
+														<td></td>
+														<td></td>
+																</div>
+															
+
+
+														</div>
+													
+
+												</table>
+											</div>
+										</div>
+									</div>
+									<script>
+										// function productTable(){
+										// 	$("#productTable tbody").append("<tr>")+
+										// 	"<td>Female Ski Jackets</td>"+
+										// 	"<td class="select"></td>"
+			
+										// }
+
+									</script>
+								
+						</table>
+					</form>
+				</div>
+			</div>
+			
+		</div>
+		<!-- this is a banner divison with GIF picture standing VERTICALLY-->
+		<img src="swegga.jpg"  style="height:350px;widows: 150px; width:150px;text-align:left" alt="sorry" >
+
+		
+
+	</aside>
+
+		
+
+	</article>
+
+	<footer class="copyright">
+		<p> &copy;2014 Swegga Fashion (Pty) Ltd</p>
+		<!--information about copyright ,privacy,policy,terms of use etc..-->
+
+	</footer>
+
+</body>
+</html>

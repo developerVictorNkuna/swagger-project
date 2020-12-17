@@ -1,0 +1,50 @@
+<DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+ <script type="text/javascript" language="JavaScript" src="/scripts/jquery-1.9.1.js" ></script>
+    <script type="text/javascript" language="JavaScript" src="/scripts/jquery-1.9.0.min.js" ></script>
+     <script type="text/javascript" language="JavaScript">
+          $(document).ready(function () {
+         $("#Select1 > option").each(function () {
+             $("#" + this.value).hide(); // hides all tables
+         });
+         });
+
+         function ShowTable(select1) {
+                              $("#Select1 > option").each(function () {
+                                  $("#" + this.value).hide(); // hides all tables
+                              });
+
+                              $("#" + select1.value).show(); // shows the selected table
+         }
+    </script>
+
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <select id="Select1" name="Select1" onchange="ShowTable(this);">
+        <option value="table1">CHARGIN</option>
+         <option value="table2">FUCK YOU</option>
+         <option value="table3">MOTHER</option>
+    </select>
+    <table id="table1" >
+        <tr>
+            <td>table1</td>
+        </tr>
+    </table>
+     <table id="table2">
+        <tr>
+            <td>table2</td>
+        </tr>
+    </table>
+     <table id="table3">
+        <tr>
+            <td>table3</td>
+        </tr>
+    </table>
+
+    </form>
+</body>
+</html>
